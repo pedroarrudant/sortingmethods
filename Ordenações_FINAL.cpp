@@ -14,12 +14,12 @@ void copiaVetor(int *v, int *vaux, int numeroElementos){
 	}
 }
 
-//efetua a leitura do vetor e o coloca em uma função auxiliar
+//efetua a leitura do vetor e o coloca em uma funï¿½ï¿½o auxiliar
 void le(int *v, int *vaux, int numeroElementos){
 	copiaVetor(v,vaux,numeroElementos);
 	}
 
-//exibição do vetor
+//exibiï¿½ï¿½o do vetor
 void exibe(int v[], int numeroElementos) {
                 int x;
                 printf("\n");
@@ -28,7 +28,7 @@ void exibe(int v[], int numeroElementos) {
                                printf("\n");
 }
 
-// Troca de valores entre duas posições
+// Troca de valores entre duas posiï¿½ï¿½es
 void permuta(int *var1, int *var2) {
                 
                 int aux;
@@ -44,7 +44,7 @@ void numeroElementos(int n, int numeroElementos){
      numeroElementos=n;
 }
 
-/* Abaixo seguem as funções das ordenações a serem utilizadas
+/* Abaixo seguem as funï¿½ï¿½es das ordenaï¿½ï¿½es que serao utilizadas
 pelo main a partir do chamado do switch*/
  
 void selectionSort2(int v[], int n) {
@@ -133,21 +133,21 @@ void insertionSort(int v[], int n) {
 main (){
 	int v[100],i,n,opcao;
 	char opcao2;
-	system("cls"); // Limpa a tela para a execução dos menus
+	system("cls"); // Limpa a tela para a execuï¿½ï¿½o dos menus
 	printf("Digite a quantidade de numeros desejados: ");
-	scanf("%d",&n); // Entrada de dados para o usuário
+	scanf("%d",&n); // Entrada de dados para o usuï¿½rio
 	for(i=0; i<n; i++)
 	{
-	printf("\nDigite um dos elementos: "); // Entrada de outros dados para o usuário
+	printf("\nDigite um dos elementos: "); // Entrada de outros dados para o usuï¿½rio
 	scanf("%i",&v[i]);}
 	le(v,v,n);
-	do {//inicia i laço para o switch
+	do {//inicia i laï¿½o para o switch
 	system("cls");//limpa tela
 	printf("\n [1] Bubble \n"); //seleciona Bubble Sort
 	printf("\n [2] Selection \n"); // Seleciona Selection Sort
 	printf("\n [3] Insert \n"); // Seleciona Insertion Sort
-	printf("\n [4] Selection 2 \n")	; // Seleciona a segunda opção de selection sort
-	printf("\n Escolha uma opcao: "); // Abre a opção do switch para interação do usuário
+	printf("\n [4] Selection 2 \n")	; // Seleciona a segunda opï¿½ï¿½o de selection sort
+	printf("\n Escolha uma opcao: "); // Abre a opï¿½ï¿½o do switch para interaï¿½ï¿½o do usuï¿½rio
 	scanf("%d",&opcao);
 	switch (opcao){
 	case 1: 
